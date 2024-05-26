@@ -1,0 +1,49 @@
+:root {
+  --black: #242424;
+  --aqua: #64eebc;
+  --white: #ffffff;
+  --red: #ff0000;
+
+  --font-size-feature-subtitle: 20px;
+  --font-size-header: 28px;
+  --font-size-feature-title: 76px;
+  --font-size-interactible-text: 18px;
+  --font-size-menu-option: 16px;
+  --font-size-thumbnail-title: 16px;
+  --font-size-thumbnail-text: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./assets/fonts/BebasNeue-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./assets/fonts/BebasNeue-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

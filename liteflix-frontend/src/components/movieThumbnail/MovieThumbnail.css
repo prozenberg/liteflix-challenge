@@ -1,0 +1,88 @@
+.movie-thumbnail {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  width: 327px;
+  height: 172px;
+  overflow: hidden;
+}
+
+.movie-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 5px;
+  font-size: var(--font-size-interactible-text);
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.movie-title img {
+  width: 48px;
+  height: 48px;
+}
+
+.movie-title span {
+  padding: 10px;
+}
+
+.movie-title.details {
+  flex-direction: row;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie-title.details img {
+  width: 32px;
+  height: 32px;
+}
+
+.movie-title-and-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.movie-vote-date {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.movie-vote {
+  font-weight: bold;
+  color: #fff;
+}
+
+.movie-date {
+  font-weight: bold;
+  color: #fff;
+}
+
+.movie-vote-icon {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}

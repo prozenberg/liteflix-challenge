@@ -1,0 +1,122 @@
+.home-page {
+  background-color: var(--black);
+}
+
+.featured-movie {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-top: 260px;
+  background-repeat: no-repeat;
+}
+
+.movie-details {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.movie-details h1 {
+  font-size: var(--font-size-feature-title);
+  color: var(--aqua);
+  line-height: 77.5px;
+  letter-spacing: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.movie-details h2 {
+  font-size: var(--font-size-feature-subtitle);
+  color: var(--white);
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 24px;
+}
+
+.desktop-background {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.desktop-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mobile-background {
+  width: 100%;
+  height: 630px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile-background img {
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-background {
+  position: absolute;
+  top: 630px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0px -20px 80px 125px var(--black);
+}
+
+@media (min-width: 1024px) {
+  .mobile-background {
+    display: none;
+  }
+
+  .desktop-background {
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    .home-page {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-template-rows: auto 1fr; /* Define two rows: auto for header, 1fr for content */
+      gap: 20px;
+      padding: 20px;
+      height: calc(100vh - 60px);
+    }
+
+    .featured-movie {
+      grid-column: 1;
+      grid-row: 2; /* Position the featured movie in the second row */
+    }
+
+    .sidebar {
+      grid-column: 2;
+      grid-row: 2; /* Position the sidebar in the second row */
+    }
+
+    .header {
+      grid-column: 1 / -1; /* Span the header across all columns */
+      grid-row: 1; /* Position the header in the first row */
+    }
+  }
+}

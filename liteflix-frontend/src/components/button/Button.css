@@ -1,0 +1,23 @@
+.custom-button {
+  width: 248px;
+  height: 56px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  font-family: Bebas Neue;
+  font-size: var(--font-size-interactible-text);
+  font-weight: regular;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.custom-button.bordered {
+  border: 2px solid #fff;
+}
+
+.button-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-right: 10px;
+}

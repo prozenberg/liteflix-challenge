@@ -1,0 +1,59 @@
+.menu {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 20px;
+}
+
+.menu-options {
+  list-style: none;
+  padding: 0 24px;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 4px;
+  text-align: left;
+  gap: 25px;
+}
+
+.menu-options li {
+  margin: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu-options li.add-movie {
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.notification-bell,
+.user-profile {
+  font-size: 24px;
+}

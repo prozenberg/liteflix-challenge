@@ -1,0 +1,26 @@
+.custom-button {
+  width: 248px;
+  height: 56px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  font-size: var(--font-size-interactible-text);
+  font-weight: regular;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.custom-button.bordered {
+  border: 1px solid #fff;
+}
+
+.custom-button.background {
+  background-color: #fff;
+  color: var(--black);
+}
+.button-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
